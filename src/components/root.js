@@ -13,7 +13,7 @@ class Index extends React.Component {
         return(
         <main>
             <h1>Pomodoro Timer</h1>
-            <p>00:00</p>
+            <p class="timer">15:00</p>
         </main>
         );
     }

@@ -1,7 +1,9 @@
 body{
     font-family:"digital";
 }
-
+.timer{
+    font-size: 45px;
+}
 @font-face{
     font-family: "digital";
     src: url("/ds_digital/DS-DIGI.TTF");
