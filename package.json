@@ -1,0 +1,47 @@
+{
+  "name": "pomodoro-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/biomath-421/pomodoro-app.git"
+  },
+  "keywords": [],
+  "author": "Mathieu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/biomath-421/pomodoro-app/issues"
+  },
+  "homepage": "https://github.com/biomath-421/pomodoro-app#readme",
+  "devDependencies": {
+    "@becode/eslint-config": "^0.10.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.8.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-unicorn": "^21.0.0",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.3.0",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "^2.1.1"
+  },
+  "lint-staged": {
+    "*.json": [
+      "npx prettier --write"
+    ],
+    "*.js": [
+      "npx eslint --fix --cache"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npx lint-staged"
+    }
+  }
+}
