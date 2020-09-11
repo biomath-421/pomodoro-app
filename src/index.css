@@ -1,10 +1,13 @@
-body{
-    font-family:"digital";
+body {
+    box-sizing: border-box;
+    font-family: "digital";
 }
-.timer{
+
+.timer {
     font-size: 45px;
 }
-@font-face{
+
+@font-face {
     font-family: "digital";
     src: url("/ds_digital/DS-DIGI.TTF");
 }
