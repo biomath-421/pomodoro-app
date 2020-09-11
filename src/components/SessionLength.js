@@ -1,11 +1,11 @@
 import React from "react";
-function SessionLength(props) {
+function sessionLength(props) {
     return (
         <section>
             <button>-</button>
-            <p>props.sessionLength</p>
+            <p>{props.sessionLength}</p>
             <button>+</button>
         </section>
-    )
+    );
 }
-export default SessionLength;
+export default sessionLength;

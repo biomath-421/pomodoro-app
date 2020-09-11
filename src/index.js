@@ -1,11 +1,12 @@
 /* Mathieu
-src/indexedDB.js - main entry point-
+src/index.js - main entry point-
 By Mathieu*/
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import Index from "./components/root";
-import BreakInterval from "./Components/BrInterval";
-import SessionLength from "./Components/SessionLength";
+import BrInterval from "./components/BrInterval";
+import sessionLength from "./components/SessionLength";
+import Timer from "./components/Timer";
 
 ReactDOM.render(
     <Index />,
