@@ -1,10 +1,113 @@
 body {
     box-sizing: border-box;
     font-family: "digital";
+    text-align: center;
+    background-color: rgb(139, 139, 139);
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    height: 40px;
+    width: auto;
+    border: none;
+    font-family: "digital";
+    font-size: 30px;
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: indigo;
+    color: ivory;
+    border-radius: 5px;
+    outline-style: none;
+}
+
+button:hover {
+    background-color: rgb(131, 77, 170);
+    color: rgb(187, 187, 132);
+}
+button:active {
+    background-color: rgb(131, 77, 170);
+    color: rgb(187, 187, 132);
+}
+
+.pomodoro{
+    background-color: rgb(235, 235, 217);
+    color: rgb(0, 102, 255);
+    font-size: 60px;
+    padding: 30px;
+    border-radius: 5px;
+    text-shadow: 0px 0px 20px rgb(59, 117, 204);
+}
+.timerControl {
+    width: auto;
+    min-width: 200px;
+    margin-top: 30px;
+}
+
+.breakControl {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: rgb(0, 65, 163);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sessionControl {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: rgb(0, 65, 163);
+    margin-left: auto;
+    width: fit-content;
+    margin-right: auto;
 }
 
 .timer {
     font-size: 45px;
+    color: rgb(73, 73, 73);
+}
+
+.disposition {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: ivory;
+    border-radius: 5px;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    color: rgb(235, 62, 62);
+    background-color: slategrey;
+}
+
+h1 {
+    font-size: 70px;
+    color: snow;
+    margin-bottom: 10px;
+    text-shadow: 0px 0px 20px rgba(75, 147, 255, 0.9);
+    margin-bottom: 30px;
+}
+h4{
+    font-size: 30px;
+    color: rgb(0, 65, 163);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.Session{
+    font-size: 50px;
+    color: rgb(0, 65, 163);
+}
+
+i {
+    margin: 0 10px;
 }
 
 @font-face {
