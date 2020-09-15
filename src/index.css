@@ -6,8 +6,16 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: auto;
+    background-image: url("../src/img/ciel.jpg");
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
 }
-
+main{
+    padding-top: 5%;
+}
 main button {
     height: 40px;
     width: auto;
@@ -19,6 +27,7 @@ main button {
     color: ivory;
     border-radius: 5px;
     outline-style: none;
+    opacity: 0.8;
 }
 
 button:hover {
@@ -27,8 +36,9 @@ button:hover {
 }
 
 button:active {
-    background-color: rgb(255, 255, 255);
-    color: rgb(71, 71, 71);
+    background-color: rgb(209, 0, 157);
+    color: ivory;
+    text-shadow: 0px 0px 5px rgb(255, 255, 255);
 }
 
 .pomodoro {
@@ -95,7 +105,7 @@ button:active {
 .disposition {
     display: flex;
     justify-content: space-evenly;
-    background-color: rgb(206, 206, 195);
+    background-color: rgba(255, 255, 240, 0.5);
     border-radius: 5px;
     max-width: 500px;
     margin-top: 10px;
@@ -118,21 +128,25 @@ h1 {
 
 h4 {
     font-size: 30px;
-    color: rgb(202, 155, 255);
+    color: rgb(206, 83, 255);
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 .Session {
+    z-index: 1;
+    width: 100%;
+    text-align: center;
     font-size: 50px;
-    color: rgb(223, 177, 253);
-    margin-top: 5px;
-    margin-bottom: 5px;
+    color: rgb(64, 0, 107);
+    text-shadow: 2px 2px 5px rgb(0, 0, 0),
+    0px 0px 10px rgb(255, 255, 255);
 }
 
 i {
     margin: 0 10px;
 }
+
 
 @font-face {
     font-family: "digital";
