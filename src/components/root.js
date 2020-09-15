@@ -103,28 +103,30 @@ class Index extends React.Component {
         return (
             <main>
                 <h1>Pomodoro Timer</h1>
-                <section className="disposition">
-                    <BreakInterval
-                        isPlay={this.state.isPlay}
-                        breakInterval={this.state.breakLength}
-                        increaseBreak={this.onIncreaseBreakLength}
-                        decreaseBreak={this.onDecreaseBreakLength}
-                    />
-                    <SessionLength
-                        isPlay={this.state.isPlay}
-                        sessionLength={this.state.sessionLength}
-                        increaseSession={this.onIncreaseSessionLength}
-                        decreaseSession={this.onDecreaseSessionLength}
+                <section className="first">
+                    <section className="disposition">
+                        <BreakInterval
+                            isPlay={this.state.isPlay}
+                            breakInterval={this.state.breakLength}
+                            increaseBreak={this.onIncreaseBreakLength}
+                            decreaseBreak={this.onDecreaseBreakLength}
+                        />
+                        <SessionLength
+                            isPlay={this.state.isPlay}
+                            sessionLength={this.state.sessionLength}
+                            increaseSession={this.onIncreaseSessionLength}
+                            decreaseSession={this.onDecreaseSessionLength}
+                        />
+                    </section>
+                    <Timer
+                        timerMinute={this.state.timerMinute}
+                        breakLength={this.state.breakLength}
+                        updateTimerMinute={this.onUpdateTimerMinute}
+                        toggleInterval={this.onToggleInterval}
+                        restartTimer={this.onRestartTimer}
+                        onPlayStopTimer={this.onPlayStopTimer}
                     />
                 </section>
-                <Timer
-                    timerMinute={this.state.timerMinute}
-                    breakLength={this.state.breakLength}
-                    updateTimerMinute={this.onUpdateTimerMinute}
-                    toggleInterval={this.onToggleInterval}
-                    restartTimer={this.onRestartTimer}
-                    onPlayStopTimer={this.onPlayStopTimer}
-                />
             </main>
         );
     }

@@ -7,7 +7,7 @@ class Timer extends React.Component {
         this.state = {
             isSession: true,
             timerSecond: 0,
-            intervalId: 0
+            intervalId: 0,
         };
         this.playTimer = this.playTimer.bind
             (this);
@@ -30,10 +30,10 @@ class Timer extends React.Component {
     decreaseTimer() {
         switch (this.state.timerSecond) {
             case 0:
-                if (this.props.updateTimerMinute === 0) {
+                if (this.props.timerMinute === 0) {
                     if (this.state.isSession) {
                         this.setState({
-                            timerSecond: 59,
+                            timerSecond: 0,
                             isSession: false,
                         });
                         this.props.toggleInterval(this.state.isSession);
@@ -50,6 +50,7 @@ class Timer extends React.Component {
                     this.setState({
                         timerSecond: 59,
                     });
+
                 }
                 break;
             default:
@@ -82,14 +83,15 @@ class Timer extends React.Component {
     render() {
         return (
             <section className="timer">
-                <h4 className="Session">{this.state.isSession === true ? "Session" : "Break"}</h4>
+                <h4 className="Session">{this.state.isSession === true ? "Session" :
+                    "Break"}</h4>
                 <section className="pomodoro">
-                <span>{this.props.timerMinute}</span>
-                <span>:</span>
-                <span>{this.state.timerSecond === 0 ? "00" :
-                    this.state.timerSecond < 10 ? "0" +
-                    this.state.timerSecond : this.state.timerSecond}</span>
-                    </section>
+                    <span>{this.props.timerMinute}</span>
+                    <span>:</span>
+                    <span>{this.state.timerSecond === 0 ? "00" :
+                        this.state.timerSecond < 10 ? "0" +
+                            this.state.timerSecond : this.state.timerSecond}</span>
+                </section>
                 <section>
                     <button className="timerControl" onClick={this.playTimer}><i className="fas fa-play"></i>play</button>
                     <button className="timerControl" onClick={this.stopTimer}><i className="fas fa-pause"></i>pause</button>
