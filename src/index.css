@@ -2,13 +2,13 @@ body {
     box-sizing: border-box;
     font-family: "digital";
     text-align: center;
-    background-color: rgb(47, 0, 56);
+    background-color: rgb(55, 0, 66);
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-button {
+main button {
     height: 40px;
     width: auto;
     border: none;
@@ -23,28 +23,41 @@ button {
 
 button:hover {
     background-color: rgb(209, 0, 157);
-    color:  ivory;
+    color: ivory;
 }
+
 button:active {
     background-color: rgb(255, 255, 255);
     color: rgb(71, 71, 71);
 }
 
-.pomodoro{
+.pomodoro {
     max-width: 500px;
     margin-left: auto;
     margin-right: auto;
     background-color: rgb(58, 0, 165);
-    color: rgb(132, 241, 255);
+    color: rgb(217, 161, 255);
     font-size: 80px;
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 5px;
-    text-shadow: 0px 0px 5px rgb(84, 178, 255);
+    text-shadow: 0px 0px 5px rgb(161, 21, 255);
+    -webkit-box-shadow: inset 3px 3px 5px rgb(21, 0, 61),
+    inset 0px 0px 5px 0px rgb(168, 121, 255),
+                0px 0px 10px rgb(15, 0, 43);
+    -moz-box-shadow: inset 3px 3px 5px rgb(21, 0, 61),
+    inset 0px 0px 5px 0px rgb(168, 121, 255),
+                0px 0px 10px rgb(15, 0, 43);
+    box-shadow: inset 3px 3px 5px rgb(21, 0, 61),
+    inset 0px 0px 5px 0px rgb(168, 121, 255),
+                0px 0px 15px 5px rgb(15, 0, 43);
+
 }
-.first{
+
+.first {
     height: 100%;
 }
+
 .timerControl {
     width: auto;
     min-width: 150px;
@@ -82,9 +95,10 @@ button:active {
 .disposition {
     display: flex;
     justify-content: space-evenly;
-    background-color: rgb(236, 236, 225);
+    background-color: rgb(206, 206, 195);
     border-radius: 5px;
     max-width: 500px;
+    margin-top: 10px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -99,17 +113,19 @@ h1 {
     font-size: 70px;
     color: snow;
     margin-bottom: 10px;
-    text-shadow: 0px 0px 10px rgba(191, 95, 255, 0.9);
+    text-shadow: 0px 0px 5px rgba(191, 95, 255, 0.9);
 }
-h4{
+
+h4 {
     font-size: 30px;
     color: rgb(202, 155, 255);
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.Session{
+
+.Session {
     font-size: 50px;
-    color:rgb(230, 194, 255);
+    color: rgb(223, 177, 253);
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -120,5 +136,5 @@ i {
 
 @font-face {
     font-family: "digital";
-    src: url("/ds_digital/DS-DIGI.TTF");
+    src: url("./ds_digital/DS-DIGI.TTF");
 }

@@ -6,6 +6,7 @@ class Timer extends React.Component {
 
         this.state = {
             isSession: true,
+            isPlay: true,
             timerSecond: 0,
             intervalId: 0,
         };
