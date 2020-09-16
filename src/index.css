@@ -62,7 +62,7 @@ button:disabled {
     text-shadow: 0px 0px 5px rgb(161, 21, 255);
     -webkit-box-shadow: inset 3px 3px 5px rgb(21, 0, 61), inset 0px 0px 7px 0px rgb(168, 121, 255), 0px 0px 10px rgb(15, 0, 43);
     -moz-box-shadow: inset 3px 3px 5px rgb(21, 0, 61), inset 0px 0px 7px 0px rgb(168, 121, 255), 0px 0px 10px rgb(15, 0, 43);
-    box-shadow: inset 3px 3px 5px rgb(21, 0, 61), inset 0px 0px 7px 0px rgba(168, 121, 255,0.4), 0px 0px 15px 5px rgb(15, 0, 43);
+    box-shadow: inset 3px 3px 5px rgb(21, 0, 61), inset 0px 0px 7px 0px rgba(168, 121, 255, 0.4), 0px 0px 15px 5px rgb(15, 0, 43);
 }
 
 .first {
@@ -115,7 +115,6 @@ button:disabled {
 }
 
 
-
 h1 {
     font-size: 70px;
     color: snow;
@@ -128,12 +127,11 @@ h4 {
     color: rgb(136, 1, 189);
     margin-top: 10px;
     margin-bottom: 10px;
-    
 }
 
 .Session {
     border-radius: 10vh;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(221, 221, 221, 0.4);
     z-index: 1;
     width: 15%;
     margin-bottom: 15px;
@@ -142,8 +140,8 @@ h4 {
     margin-right: 42.5%;
     text-align: center;
     font-size: 100%;
-    color: rgb(220, 167, 255);
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2), -2px -2px 3px rgba(255, 255, 255, 0.4);
+    color: rgb(153, 0, 255);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4), -2px -2px 3px rgba(255, 255, 255, 0.4);
 }
 
 i {
@@ -153,4 +151,62 @@ i {
 @font-face {
     font-family: "digital";
     src: url("./ds_digital/DS-DIGI.TTF");
+}
+
+@media screen and (max-width:780px){
+    body{
+        background-size: cover;
+    }
+    main{
+        max-width: 350px;
+        padding-top: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    main button{
+        height: 25px;
+        margin:5px;
+        justify-self: center ;
+    }
+    h1{
+        font-size: 40px;
+    }
+    h4{
+        font-size: 25px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    .Session{
+        width:auto;
+        min-width: 100px;
+        font-size: 30px;
+        margin-left: 10%;
+        margin-right:10%;
+    }
+    .disposition{
+        flex-direction: column;
+        margin-top: 5px;
+    }
+    .timerControl{
+        min-width: 110px;
+        margin: 5px;
+    }
+    .Column{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .pomodoro{
+        max-width: 300px;
+        margin-bottom: 10px;
+        font-size: 35px;
+    }
+    .breakControl{
+        padding: 10px;
+        font-size: 25px;
+    }
+    .sessionControl{
+        font-size: 25px;
+        padding: 10px;
+    }
 }

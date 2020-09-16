@@ -44,8 +44,8 @@ class Timer extends React.Component {
         switch (this.state.timerSecond) {
             case 0:
                 if (this.props.timerMinute === 0) {
-                    this.playSound();
                     if (this.state.isSession) {
+                        this.playSound();
                         this.setState({
                             timerSecond: 0,
                             isSession: false,
@@ -111,7 +111,7 @@ class Timer extends React.Component {
                         this.state.timerSecond < 10 ? "0" +
                             this.state.timerSecond : this.state.timerSecond}</span>
                 </section>
-                <section>
+                <section className="Column">
                     <button className="timerControl" disabled={this.state.isPlay === true ? "disabled" : ""} onClick={() => this.playTimer()}><i className="fas fa-play"></i>play</button>
                     <button className="timerControl" disabled={this.state.isPlay === false ? "disabled" : ""} onClick={() => this.stopTimer()}><i className="fas fa-pause"></i>pause</button>
                     <button className="timerControl" onClick={() => this.restartTimer()}><i className="fas fa-redo-alt"></i>restart</button>
