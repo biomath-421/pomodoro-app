@@ -94,8 +94,8 @@ class Index extends React.Component {
     }
     onPlayStopTimer(isPlay) {
         this.setState({
-            isPlay: isPlay
-        })
+            isPlay: isPlay,
+        });
 
     }
 

@@ -7,15 +7,17 @@ body {
     flex-direction: column;
     justify-content: center;
     width: auto;
-    background-image: url("../src/img/ciel.jpg");
+    background-image: url("../src/img/ciel-3.jpg");
     background-size: contain;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
 }
-main{
+
+main {
     padding-top: 5%;
 }
+
 main button {
     height: 40px;
     width: auto;
@@ -52,16 +54,9 @@ button:active {
     padding-bottom: 20px;
     border-radius: 5px;
     text-shadow: 0px 0px 5px rgb(161, 21, 255);
-    -webkit-box-shadow: inset 3px 3px 5px rgb(21, 0, 61),
-    inset 0px 0px 5px 0px rgb(168, 121, 255),
-                0px 0px 10px rgb(15, 0, 43);
-    -moz-box-shadow: inset 3px 3px 5px rgb(21, 0, 61),
-    inset 0px 0px 5px 0px rgb(168, 121, 255),
-                0px 0px 10px rgb(15, 0, 43);
-    box-shadow: inset 3px 3px 5px rgb(21, 0, 61),
-    inset 0px 0px 5px 0px rgb(168, 121, 255),
-                0px 0px 15px 5px rgb(15, 0, 43);
-
+    -webkit-box-shadow: inset 3px 3px 5px rgb(21, 0, 61), inset 0px 0px 7px 0px rgb(168, 121, 255), 0px 0px 10px rgb(15, 0, 43);
+    -moz-box-shadow: inset 3px 3px 5px rgb(21, 0, 61), inset 0px 0px 7px 0px rgb(168, 121, 255), 0px 0px 10px rgb(15, 0, 43);
+    box-shadow: inset 3px 3px 5px rgb(21, 0, 61), inset 0px 0px 7px 0px rgba(168, 121, 255,0.4), 0px 0px 15px 5px rgb(15, 0, 43);
 }
 
 .first {
@@ -71,7 +66,7 @@ button:active {
 .timerControl {
     width: auto;
     min-width: 150px;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 .breakControl {
@@ -128,25 +123,30 @@ h1 {
 
 h4 {
     font-size: 30px;
-    color: rgb(206, 83, 255);
+    color: rgb(136, 1, 189);
     margin-top: 10px;
     margin-bottom: 10px;
+    
 }
 
 .Session {
+    border-radius: 10vh;
+    background-color: rgba(0, 0, 0, 0.6);
     z-index: 1;
-    width: 100%;
+    width: 15%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-left: 42.5%;
+    margin-right: 42.5%;
     text-align: center;
-    font-size: 50px;
-    color: rgb(64, 0, 107);
-    text-shadow: 2px 2px 5px rgb(0, 0, 0),
-    0px 0px 10px rgb(255, 255, 255);
+    font-size: 100%;
+    color: rgb(196, 107, 255);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2), -2px -2px 3px rgba(255, 255, 255, 0.4);
 }
 
 i {
     margin: 0 10px;
 }
-
 
 @font-face {
     font-family: "digital";
