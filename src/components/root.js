@@ -2,7 +2,7 @@ import React from "react";
 import "../index.css";
 import BreakInterval from "./BrInterval";
 import SessionLength from "./SessionLength";
-import Timer from "./Timer"
+import Timer from "./Timer";
 
 class Index extends React.Component {
     constructor() {
