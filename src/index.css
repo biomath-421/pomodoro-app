@@ -12,6 +12,7 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
+    margin:0px;
 }
 
 main {
@@ -73,6 +74,7 @@ button:disabled {
     width: auto;
     min-width: 150px;
     margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 .breakControl {
@@ -115,7 +117,6 @@ button:disabled {
 }
 
 #github{
-    margin-top: 30px;
     color: rgb(255, 158, 231);
     text-decoration: none;
     text-shadow: 0 0 10px rgb(153, 0, 255);
@@ -139,6 +140,7 @@ button:disabled {
 h1 {
     font-size: 70px;
     color: snow;
+    margin-top: 5px;
     margin-bottom: 10px;
     text-shadow: 0px 0px 5px rgba(191, 95, 255, 0.9);
 }
@@ -187,6 +189,7 @@ i {
     main button{
         height: 25px;
         margin:5px;
+        margin-top: 15px;
         justify-self: center ;
     }
     h1{
@@ -210,7 +213,7 @@ i {
     }
     .timerControl{
         min-width: 110px;
-        margin: 5px;
+        margin: 10px;
     }
     .Column{
         display: flex;
