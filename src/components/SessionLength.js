@@ -25,7 +25,7 @@ function sessionLength(props) {
         props.increaseSessionTen();
     }
     return (
-        <section>
+        <section className="sessionPanel">
             <h4>Session length</h4>
             <section className="sessionControl">
             <button disabled={props.isPlay === true ? "disabled" : ""} onClick={decreaseSessionTen}>- 10</button>

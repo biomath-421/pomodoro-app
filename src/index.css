@@ -88,6 +88,12 @@ button:disabled {
     margin-left: auto;
     margin-right: auto;
 }
+.breakPanel{
+    margin: 10px;
+    padding: 5px;
+    background-color: rgba(202, 174, 255, 0.6);
+    border-radius: 10px;
+}
 
 .sessionControl {
     display: flex;
@@ -99,6 +105,12 @@ button:disabled {
     margin-left: auto;
     width: fit-content;
     margin-right: auto;
+}
+.sessionPanel{
+    margin:10px;
+    padding: 5px;
+    background-color: rgba(202, 174, 255, 0.6);
+    border-radius: 10px;
 }
 
 .timer {
@@ -197,8 +209,7 @@ i {
     }
     h4{
         font-size: 25px;
-        margin-bottom: 5px;
-        margin-top: 5px;
+        margin: 5px;
     }
     .Session{
         width:auto;
@@ -228,9 +239,11 @@ i {
     .breakControl{
         padding: 10px;
         font-size: 25px;
+        align-items: baseline;
     }
     .sessionControl{
         font-size: 25px;
         padding: 10px;
+        align-items: baseline;
     }
 }

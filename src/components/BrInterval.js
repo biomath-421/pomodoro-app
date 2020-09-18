@@ -25,7 +25,7 @@ function BreakInterval(props) {
         props.increaseBreakTen();
     }
     return (
-        <section>
+        <section className="breakPanel">
             <h4>Break length</h4>
             <section className="breakControl">
             <button disabled={props.isPlay === true ? "disabled" : ""} onClick={decreaseBreakTen}>- 10</button>
