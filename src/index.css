@@ -25,7 +25,7 @@ main button {
     border: none;
     font-family: "digital";
     font-size: 20px;
-    margin: 10px;
+    margin: 5px;
     background-color: rgb(138, 0, 103);
     color: ivory;
     border-radius: 5px;
@@ -188,7 +188,7 @@ i {
     }
     main button{
         height: 25px;
-        margin:5px;
+        margin:2px;
         margin-top: 15px;
         justify-self: center ;
     }
