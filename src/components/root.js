@@ -19,9 +19,17 @@ class Index extends React.Component {
             (this);
         this.onDecreaseBreakLength = this.onDecreaseBreakLength.bind
             (this);
+            this.onIncreaseBreakLengthTen = this.onIncreaseBreakLengthTen.bind
+            (this);
+        this.onDecreaseBreakLengthTen = this.onDecreaseBreakLengthTen.bind
+            (this);
         this.onIncreaseSessionLength = this.onIncreaseSessionLength.bind
             (this);
         this.onDecreaseSessionLength = this.onDecreaseSessionLength.bind
+            (this);
+            this.onIncreaseSessionLengthTen = this.onIncreaseSessionLengthTen.bind
+            (this);
+        this.onDecreaseSessionLengthTen = this.onDecreaseSessionLengthTen.bind
             (this);
         this.onToggleInterval = this.onToggleInterval.bind
             (this);
@@ -49,6 +57,21 @@ class Index extends React.Component {
             };
         });
     }
+    onIncreaseBreakLengthTen() {
+        this.setState((prevState) => {
+            return {
+                breakLength: prevState.breakLength + 10
+            };
+        });
+    }
+
+    onDecreaseBreakLengthTen() {
+        this.setState((prevState) => {
+            return {
+                breakLength: prevState.breakLength - 10
+            };
+        });
+    }
 
     onIncreaseSessionLength() {
         this.setState((prevState) => {
@@ -64,6 +87,24 @@ class Index extends React.Component {
             return {
                 sessionLength: prevState.sessionLength - 1,
                 timerMinute: prevState.sessionLength - 1
+            };
+        });
+    }
+
+    onIncreaseSessionLengthTen() {
+        this.setState((prevState) => {
+            return {
+                sessionLength: prevState.sessionLength + 10,
+                timerMinute: prevState.sessionLength + 10
+            };
+        });
+    }
+
+    onDecreaseSessionLengthTen() {
+        this.setState((prevState) => {
+            return {
+                sessionLength: prevState.sessionLength - 10,
+                timerMinute: prevState.sessionLength - 10
             };
         });
     }
@@ -110,12 +151,16 @@ class Index extends React.Component {
                             breakInterval={this.state.breakLength}
                             increaseBreak={this.onIncreaseBreakLength}
                             decreaseBreak={this.onDecreaseBreakLength}
+                            increaseBreakTen={this.onIncreaseBreakLengthTen}
+                            decreaseBreakTen={this.onDecreaseBreakLengthTen}
                         />
                         <SessionLength
                             isPlay={this.state.isPlay}
                             sessionLength={this.state.sessionLength}
                             increaseSession={this.onIncreaseSessionLength}
                             decreaseSession={this.onDecreaseSessionLength}
+                            increaseSessionTen={this.onIncreaseSessionLengthTen}
+                            decreaseSessionTen={this.onDecreaseSessionLengthTen}
                         />
                     </section>
                     <Timer
