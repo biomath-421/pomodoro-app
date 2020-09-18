@@ -224,7 +224,7 @@ i {
     }
     .timerControl{
         min-width: 110px;
-        margin: 10px;
+        margin: 5px;
     }
     .Column{
         display: flex;
@@ -235,6 +235,7 @@ i {
         max-width: 300px;
         margin-bottom: 10px;
         font-size: 35px;
+        max-height: 45px;
     }
     .breakControl{
         padding: 10px;
