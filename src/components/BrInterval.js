@@ -28,11 +28,11 @@ function BreakInterval(props) {
         <section>
             <h4>Break length</h4>
             <section className="breakControl">
-            <button disabled={props.isPlay === true ? "disabled" : ""} onClick={decreaseBreakTen}>-10</button>
-                <button disabled={props.isPlay === true ? "disabled" : ""} onClick={decreaseBreak}>-1</button>
+            <button disabled={props.isPlay === true ? "disabled" : ""} onClick={decreaseBreakTen}>- 10</button>
+                <button disabled={props.isPlay === true ? "disabled" : ""} onClick={decreaseBreak}>- 1</button>
                 <p>{props.breakInterval}</p>
-                <button disabled={props.isPlay === true ? "disabled" : ""} onClick={increaseBreak}>+1</button>
-                <button disabled={props.isPlay === true ? "disabled" : ""} onClick={increaseBreakTen}>+10</button>
+                <button disabled={props.isPlay === true ? "disabled" : ""} onClick={increaseBreak}>+ 1</button>
+                <button disabled={props.isPlay === true ? "disabled" : ""} onClick={increaseBreakTen}>+ 10</button>
             </section>
         </section>
     );
